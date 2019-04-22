@@ -1,6 +1,6 @@
 using System;
 
-namespace TriangleTracker{
+namespace MySpace{
 
 public class Program
 {
@@ -18,10 +18,9 @@ public class Program
     string thirdSide = Console.ReadLine();
     int side3 = int.Parse(thirdSide);
 
-  Triangle myTriangle = new Triangle (int side1, int side2, int side3);
-  srting res = myTriangle.Result();
-  Console.WriteLine("Your triangle is" + res);
-}
-}
-
+    Triangle myTriangle = new Triangle (side1,  side2, side3);
+    string res = myTriangle.Result();
+    Console.WriteLine("Your triangle is" + " " + res);
+    }
+  }
 }

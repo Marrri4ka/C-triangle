@@ -1,7 +1,9 @@
 using System;
 
-namespace TriangleTracker {
-  class Traingle{
+namespace MySpace {
+
+  class Triangle
+  {
     private int Side1;
     private int Side2;
     private int Side3;
@@ -13,7 +15,7 @@ namespace TriangleTracker {
       Side3 = side3;
     }
 
-    public string Result ()
+    public string Result()
     {
       if(Side1 == Side2 && Side2 == Side3)
       {
@@ -25,7 +27,7 @@ namespace TriangleTracker {
       }
       else if (Side1 == Side2 || Side2 == Side3 || Side1 == Side3)
       {
-        return "isosceles";
+        return  "isosceles";
       }
       else
       {
